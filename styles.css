@@ -6,6 +6,12 @@
   font-family: sans-serif;
 }
 
+[data-animate_upwards]{
+  /* border: 2px solid red !important; */
+  transform:translateY(100px);
+  transition: transform 1s;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -25,11 +31,14 @@ a {
   right: 0;
   transition: padding 0.7s;
   width: 100%;
+  
+  z-index:1000;
 }
 
-.section {
-  transform: translateY(100px);
+.navbar > div{
+  transition:transform 1s;
 }
+
 
 .landing-view-section {
   min-height: 100vh;
@@ -37,7 +46,7 @@ a {
   background-image: url("./images/home-bg-2.jpg");
   background-size: cover;
   background-attachment: fixed;
-  transform: translateY(0) !important;
+  /* transform: translateY(0) !important; */
 }
 
 .navbar > div:hover {
@@ -87,6 +96,9 @@ a {
 .experience-section,
 .contact-section {
   padding-top: 8rem;
+}
+.contact-section{
+  padding-bottom:8rem;
 }
 
 .signature-image {
@@ -278,6 +290,7 @@ a {
 
 .projects-section-container {
   width: 100%;
+  padding-bottom:7rem;
   /* border:5px solid black; */
 }
 .projects-section-container-inner {
